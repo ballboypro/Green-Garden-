@@ -38,7 +38,7 @@
                      </children>
                   </HBox>
                   <Pane prefHeight="59.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
-                  <VBox alignment="CENTER" prefHeight="565.0" prefWidth="328.0" stylesheets="@../values/style.css">
+                  <VBox alignment="CENTER" prefHeight="496.0" prefWidth="335.0" stylesheets="@../values/style.css">
                      <VBox.margin>
                         <Insets left="50.0" right="50.0" />
                      </VBox.margin>
