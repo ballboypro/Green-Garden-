@@ -1,6 +1,8 @@
 # Green-Garden-
 This shop application with an authorization is built using Java and JavaFX GUI.
 
+The main page:
+
 There are Login and Signup panels:
 
 
