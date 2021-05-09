@@ -35,9 +35,9 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="82.0" prefWidth="500.0">
                <children>
-                  <Button fx:id="signIn_btn" mnemonicParsing="false" onAction="#signInBtn" prefHeight="40.0" prefWidth="115.0" stylesheets="@../values/style.css" text="Sign in" />
+                  <Button fx:id="signIn_btn" defaultButton="true" mnemonicParsing="false" onAction="#signInBtn" prefHeight="40.0" prefWidth="115.0" stylesheets="@../values/style.css" text="Sign in" />
                   <Pane prefHeight="200.0" prefWidth="20.0" />
-                  <Button fx:id="login_btn" mnemonicParsing="false" onAction="#logBtn" prefHeight="40.0" prefWidth="115.0" stylesheets="@../values/style.css" text="Login Page" />
+                  <Button fx:id="login_btn" cancelButton="true" mnemonicParsing="false" onAction="#logBtn" prefHeight="40.0" prefWidth="115.0" stylesheets="@../values/style.css" text="Login Page" />
                </children>
             </HBox>
          </children>

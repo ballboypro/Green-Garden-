@@ -29,6 +29,11 @@ public class ItemController {
         myListener.onClickListener(fruit);
     }
 
+    @FXML
+    void OrderSelected(ActionEvent event) {
+
+    }
+
     public void setData(Fruit fruit, MyListener myListener) {
         this.fruit = fruit;
         this.myListener = myListener;

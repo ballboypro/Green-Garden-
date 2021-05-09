@@ -48,11 +48,16 @@ public class SignUpController {
 
             Statement statement = connection.createStatement();
 
-            int status = statement.executeUpdate("insert into user (username,email,password)" +
-                    " values('" + username + "','" + email + "','" + password + "')");
+            if (!username.equals("") || !email.equals("") || !password.equals("")){
+                int status = statement.executeUpdate("insert into user (username,email,password)" +
+                        " values('" + username + "','" + email + "','" + password + "')");
 
-            if (status > 0) {
-                System.out.println("user registered");
+
+                if (status > 0) {
+                    System.out.println("user registered");
+                }
+            } else {
+                System.out.println("empty");
             }
 
         } catch (SQLException e) {

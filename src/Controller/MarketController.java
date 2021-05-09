@@ -4,14 +4,19 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 import main.Main;
 import main.MyListener;
 import model.Fruit;
@@ -20,6 +25,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class MarketController implements Initializable {
@@ -123,6 +129,41 @@ public class MarketController implements Initializable {
 
         return fruits;
     }
+
+    @FXML
+    void ExpressDelivery(MouseEvent event) {
+        ((Node)event.getSource()).getScene().getWindow().hide();
+
+        Stage primaryStage = new Stage();
+
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../views/delivery.fxml")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        primaryStage.setTitle("Fruits Market");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+
+    @FXML
+    void FreeDelivery(MouseEvent event) {
+        ((Node)event.getSource()).getScene().getWindow().hide();
+
+        Stage primaryStage = new Stage();
+
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../views/delivery.fxml")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        primaryStage.setTitle("Fruits Market");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+
 
     private void setChosenFruit(Fruit fruit) {
         fruitNameLabel.setText(fruit.getName());

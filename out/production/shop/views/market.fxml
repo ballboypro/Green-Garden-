@@ -110,7 +110,7 @@
                   <HBox prefHeight="101.0" prefWidth="848.0">
                      <children>
                         <Pane layoutX="780.0" layoutY="10.0" prefHeight="102.0" prefWidth="86.0" />
-                        <HBox alignment="CENTER" prefHeight="102.0" prefWidth="335.0" styleClass="free-delivery-card" stylesheets="@../values/style.css">
+                        <HBox alignment="CENTER" onMouseClicked="#FreeDelivery" prefHeight="102.0" prefWidth="335.0" styleClass="free-delivery-card" stylesheets="@../values/style.css">
                            <children>
                               <VBox alignment="CENTER" prefHeight="102.0" prefWidth="210.0">
                                  <children>
@@ -134,7 +134,7 @@
                            </children>
                         </HBox>
                         <Pane prefHeight="84.0" prefWidth="96.0" HBox.hgrow="ALWAYS" />
-                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="102.0" prefWidth="335.0" styleClass="shopping-online-card" stylesheets="@../values/style.css">
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#ExpressDelivery" prefHeight="102.0" prefWidth="335.0" styleClass="shopping-online-card" stylesheets="@../values/style.css">
                            <children>
                               <VBox alignment="CENTER" prefHeight="102.0" prefWidth="244.0">
                                  <children>
