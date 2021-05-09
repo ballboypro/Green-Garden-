@@ -23,6 +23,7 @@ public class DeliveryController {
         ((Node)actionEvent.getSource()).getScene().getWindow().hide();
 
         Stage primaryStage = new Stage();
+        primaryStage.setFullScreen(true);
 
         Parent root = null;
         try {
