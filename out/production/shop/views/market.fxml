@@ -2,10 +2,8 @@
 
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -69,42 +67,11 @@
                            </VBox.margin>
                         </ImageView>
                         <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
-                           <children>
-                              <Label prefHeight="54.0" prefWidth="167.0" text="Kg" textFill="#fdfbfb">
-                                 <font>
-                                    <Font name="Cambria" size="24.0" />
-                                 </font>
-                              </Label>
-                              <ComboBox prefHeight="45.0" prefWidth="130.0" promptText="1" styleClass="comboBox" stylesheets="@../values/style.css" />
-                           </children>
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </HBox>
-                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
-                           <VBox.margin>
-                              <Insets bottom="20.0" top="20.0" />
-                           </VBox.margin>
-                           <children>
-                              <Separator prefHeight="2.0" prefWidth="118.0" />
-                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="64.0" text="or" textFill="#fdfbfb">
-                                 <font>
-                                    <Font name="Cambria" size="24.0" />
-                                 </font>
-                              </Label>
-                              <Separator layoutX="133.0" layoutY="32.0" prefHeight="2.0" prefWidth="118.0" />
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
-                           <children>
-                              <Label prefHeight="54.0" prefWidth="167.0" text="Kg" textFill="#fdfbfb">
-                                 <font>
-                                    <Font name="Cambria" size="24.0" />
-                                 </font>
-                              </Label>
-                              <ComboBox prefHeight="45.0" prefWidth="130.0" promptText="selected" styleClass="comboBox" stylesheets="@../values/style.css" />
-                           </children>
-                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0" />
                      </children>
                      <styleClass>
                         <String fx:value="chosen-fruit-card" />
@@ -118,22 +85,26 @@
          <center>
             <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                <children>
-                  <HBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0">
+                  <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="840.0" style="-fx-border-color: #828282;">
                      <VBox.margin>
-                        <Insets left="20.0" right="20.0" />
+                        <Insets left="20.0" right="20.0" top="5.0" />
                      </VBox.margin>
                      <children>
-                        <Label prefHeight="30.0" prefWidth="88.0" text="language" textFill="#878787">
+                        <Pane prefHeight="49.0" prefWidth="12.0" />
+                        <Label prefHeight="30.0" prefWidth="273.0" text="More categories coming soon" textFill="#878787">
                            <font>
                               <Font name="Cambria Bold" size="18.0" />
                            </font>
+                           <HBox.margin>
+                              <Insets right="50.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets right="20.0" />
+                           </opaqueInsets>
                         </Label>
-                        <Label layoutX="284.0" layoutY="28.0" prefHeight="29.0" prefWidth="78.0" text="English" textFill="#878787" underline="true">
-                           <font>
-                              <Font name="Cambria" size="18.0" />
-                           </font>
-                        </Label>
-                        <Pane prefHeight="66.0" prefWidth="393.0" HBox.hgrow="ALWAYS" />
                      </children>
                   </HBox>
                   <HBox prefHeight="101.0" prefWidth="848.0">
@@ -155,9 +126,9 @@
                                     </Label>
                                  </children>
                               </VBox>
-                              <ImageView fitHeight="79.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="64.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../img/delivery.png" />
+                                    <Image url="@../img/nowhitedelivery.png" />
                                  </image>
                               </ImageView>
                            </children>
@@ -179,9 +150,9 @@
                                     </Label>
                                  </children>
                               </VBox>
-                              <ImageView fitHeight="95.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="57.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../img/stopwatch.png" />
+                                    <Image url="@../img/greystopwatch.png" />
                                  </image>
                               </ImageView>
                            </children>
